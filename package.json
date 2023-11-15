@@ -1,0 +1,68 @@
+{
+  "name": "zotero-better-notes",
+  "addonName": "Zotero Better Notes",
+  "addonID": "Knowledge4Zotero@windingwind.com",
+  "addonRef": "Knowledge4Zotero",
+  "version": "0.8.8",
+  "description": "Everything about note management. All in Zotero.",
+  "main": "src/index.js",
+  "scripts": {
+    "build-dev": "cross-env NODE_ENV=development node build.js",
+    "build": "cross-env NODE_ENV=production node build.js",
+    "start": "node start.js",
+    "stop": "node stop.js",
+    "prerestart": "npm run build-dev",
+    "restart": "node restart.js",
+    "release": "release-it",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windingwind/zotero-better-notes.git"
+  },
+  "author": "windingwind",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/windingwind/zotero-better-notes/issues"
+  },
+  "homepage": "https://github.com/windingwind/zotero-better-notes#readme",
+  "dependencies": {
+    "asciidoctor": "^2.2.6",
+    "crypto-js": "^4.1.1",
+    "diff": "^5.1.0",
+    "hast-util-to-html": "^8.0.3",
+    "hast-util-to-mdast": "^8.4.1",
+    "hast-util-to-text": "^3.1.1",
+    "hastscript": "^7.1.0",
+    "html-docx-js-typescript": "^0.1.5",
+    "prosemirror-model": "^1.18.3",
+    "prosemirror-transform": "^1.7.0",
+    "rehype-format": "^4.0.1",
+    "rehype-parse": "^8.0.4",
+    "rehype-remark": "^9.1.2",
+    "rehype-stringify": "^9.0.3",
+    "remark-gfm": "^3.0.1",
+    "remark-math": "^5.1.1",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "remark-stringify": "^10.0.2",
+    "replace-in-file": "^6.3.2",
+    "seedrandom": "^3.0.5",
+    "tree-model": "^1.0.7",
+    "unified": "^10.1.2",
+    "unist-util-visit": "^4.1.1",
+    "unist-util-visit-parents": "^5.1.1",
+    "yamljs": "^0.3.0",
+    "zotero-plugin-toolkit": "^0.1.1"
+  },
+  "devDependencies": {
+    "@types/diff": "^5.0.2",
+    "@types/jquery": "^3.5.14",
+    "@types/node": "^17.0.31",
+    "compressing": "^1.5.1",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.14.34",
+    "release-it": "^14.14.0",
+    "zotero-types": "^0.1.2"
+  }
+}
